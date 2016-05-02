@@ -1,0 +1,36 @@
+nav ul {
+    display: flex;
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    flex: 1;
+    border-color: #1924ff;
+    border: 0.7rem;
+}
+
+nav a {
+    display: block;
+
+    border: 0.5rem;
+    padding: 0.2rem;
+
+    background: silver;
+    text-align: center;
+
+    color: Red;
+    text-decoration:none;
+}
+
+nav a:hover {
+    text-decoration:underline;
+}
+
+nav a.current_page {
+    color: white;
+    background: green;
+    text-decoration:none;
+}

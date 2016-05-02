@@ -1,0 +1,51 @@
+{# This is the jobs page. It will allow the lecturer to add jobs to the list of jobs #}
+
+{% extends '_base.html.twig' %}
+
+{# ------------------------------------------------- #}
+{% block pageTitle %}Jobs page{% endblock %}
+
+{# ------------------------------------------------- #}
+{% block main %}
+
+    <h1>
+        Welcome To the Jobs page
+    </h1>
+
+    <p>
+        Add a new job to the list of jobs.<br>
+
+        change student status from unemployed to employed
+
+    </p>
+
+    <h1>Please login</h1>
+    <form
+            method="post"
+            action="/updateJob"
+    >
+
+        <p>
+            Job Tile:
+            <input type="text" name="title" autofocus>
+        </p>
+        <p>
+            Employer name:
+            <input type="text" name="employer">
+        </p>
+        <p>
+            Job Details:
+            <input type="text" name="details">
+        </p>
+        <p>
+            Field:
+            <input type="text" name="field">
+        </p>
+        <p>
+            Expiry date:
+            <input type="datetime" name="field">
+        </p>
+        <input type="submit" value="Add Job">
+    </form>
+
+{% endblock %}

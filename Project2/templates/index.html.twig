@@ -1,0 +1,20 @@
+{#----------------#}
+{# this page is the index page and will show the welcome message #}
+{#----------------#}
+
+{% extends '_base.html.twig' %}
+
+{% block title %}home{% endblock %}
+
+{% block main %}
+
+    <h1>Welcome to student share</h1>
+
+    <p>
+        This site allows students to upload their cv's for staff to edit and see.
+        staff can view student cvs and upload new jobs.
+    </p>
+    <p>
+        Staff and student can login <a href="/login">here</a>
+    </p>
+{% endblock %}
